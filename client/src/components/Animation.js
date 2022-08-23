@@ -2,12 +2,12 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PhotoAlbum from "react-photo-album";
 import Home from "./Home";
+import AboutMe from "./AboutMe";
+import Layout from "./Layout/Layout";
+import Projects from "./Projects";
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
-const unsplashLink = (id, width, height) =>
-  `https://source.unsplash.com/${id}/${width}x${height}`;
-
-const unsplashPhotos = [
+const photoObj = [
   { src: "./images/bigsur.jpg", width: 1080, height: 780 },
   { src: "./images/grad.jpg", width: 1080, height: 1620 },
   { src: "./images/lily.jpg", width: 1080, height: 720 },
@@ -15,6 +15,7 @@ const unsplashPhotos = [
   { src: "./images/noon.jpg", width: 1080, height: 720 },
   { src: "./images/om.jpg", width: 720, height: 1080 },
   { src: "./images/pdx.jpg", width: 720, height: 1080 },
+  { src: "./images/hike.jpeg", width: 1080, height: 850 },
   { src: "./images/photo.jpg", width: 1080, height: 720 },
   { src: "./images/rainbow.jpg", width: 1080, height: 720 },
   { src: "./images/redworld.jpg", width: 1080, height: 720 },
@@ -22,9 +23,10 @@ const unsplashPhotos = [
   { src: "./images/sunsett.jpg", width: 1080, height: 720 },
   { src: "./images/tiburon.jpg", width: 1080, height: 720 },
   { src: "./images/water.jpg", width: 1080, height: 720 },
+  { src: "./images/flowers.jpeg", width: 720, height: 1080 },
 ];
 
-const photos = unsplashPhotos.map((photo) => ({
+const photos = photoObj.map((photo) => ({
   src: photo.src,
   width: photo.width,
   height: photo.height,
@@ -93,7 +95,6 @@ const Animation = () => {
     return (
       <div>
         <motion.div
-          className="bg-black"
           style={{ width: "100%", height: 100 }}
           initial="initial"
           animate="animate"
@@ -124,42 +125,19 @@ const Animation = () => {
           >
             <PhotoAlbum photos={photos} layout="masonry" />
           </motion.div>
-          {/* <motion.svg
-            variants={textContainer}
-            className="absolute items-center flex"
-          >
-            <pattern
-              id="pattern"
-              patternUnits="userSpaceOnUse"
-              width={750}
-              height={800}
-              className="text-white"
-            >
-              <rect className="w-full h-full fill-current" />
-              <motion.rect
-                variants={text}
-                className="w-full h-full text-gray-600 fill-current"
-              />
-            </pattern>
-            <text
-              className="text-4xl font-bold"
-              textAnchor="middle"
-              x="50%"
-              y="50%"
-              style={{ fill: "white" }}
-            >
-              tailstore
-            </text>
-          </motion.svg> */}
         </motion.div>
       </div>
     );
   };
   return (
-    <motion.section exit={{ opacity: 0 }}>
-      <InitialTransition />
-      <Home />
-    </motion.section>
+    <Layout>
+      <motion.section exit={{ opacity: 0 }}>
+        <InitialTransition />
+        <Home />
+        <AboutMe />
+        <Projects />
+      </motion.section>
+    </Layout>
   );
 };
 

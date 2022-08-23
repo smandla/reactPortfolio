@@ -1,0 +1,17 @@
+.project_card {
+  background: red;
+  margin: 10px;
+
+  width: 45%;
+}
+.project_img {
+  width: 100%;
+}
+@media screen and (min-width: 990px) {
+  .project_card {
+    background: red;
+    margin: 10px;
+
+    width: 30%;
+  }
+}

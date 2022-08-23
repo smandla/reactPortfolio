@@ -4,6 +4,7 @@ import { Routes, Route, useLocation, useHistory } from "react-router-dom";
 import Animation from "./components/Animation";
 import { motion, AnimatePresence } from "framer-motion";
 import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   // const location = useLocation();
@@ -21,12 +22,11 @@ function App() {
   //   );
   // };
   return (
-    <AnimatePresence mode="wait">
-      <Routes>
-        <Route path="/" element={<Animation />}></Route>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-    </AnimatePresence>
+    <div style={{ height: "100vh" }}>
+      <AnimatePresence mode="wait" style={{ height: "100vh" }}>
+        <Animation />
+      </AnimatePresence>
+    </div>
   );
 }
 

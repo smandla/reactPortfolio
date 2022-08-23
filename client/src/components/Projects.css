@@ -1,0 +1,10 @@
+.project_title {
+  text-align: center;
+}
+
+.project_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
