@@ -3,6 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import Header from "./Header";
 import Typical from "react-typical";
+import { FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
+import { TbBrandGithub, TbBrandSoundcloud } from "react-icons/tb";
+import { RiSoundcloudFill } from "react-icons/ri";
+import { MdOutlineEmail } from "react-icons/md";
 import "./Home.css";
 const Home = () => {
   console.log("in home");
@@ -23,10 +27,7 @@ const Home = () => {
             </div>
             <div className="profile-details">
               <div className="profile-details-name">
-                <span className="primary-text"> Hello,</span>
-              </div>
-              <div className="profile-details-name">
-                <span className="primary-text">I'm Kavya!</span>
+                <span className="primary-text"> Hello, I'm Kavya</span>
               </div>
 
               <div className="profile-details-role">
@@ -36,7 +37,7 @@ const Home = () => {
                     <Typical
                       loop={Infinity}
                       steps={[
-                        "Front End Engineer",
+                        "Full Stack Engineer",
                         2000,
                         "Music Producer",
                         2000,
@@ -49,6 +50,23 @@ const Home = () => {
                       ]}
                     />
                   </h1>
+                  <span className="social_media">
+                    <a href="www.linkedin.com/srikavya-mandla">
+                      <FaLinkedinIn />
+                    </a>
+                    <a href="www.linkedin.com/srikavya-mandla">
+                      <TbBrandGithub />
+                    </a>
+                    <a href="www.linkedin.com/srikavya-mandla">
+                      <RiSoundcloudFill />
+                    </a>
+                    <a href="www.linkedin.com/srikavya-mandla">
+                      <FaPhoneAlt />
+                    </a>
+                    <a href="www.linkedin.com/srikavya-mandla">
+                      <MdOutlineEmail />
+                    </a>
+                  </span>
                   {/* <span className="profile-role-tagline">
                     Junior Front End Engineer with experience in React,
                     HTML/CSS, JavaScript, Node.JS, MERN stack. Currently, I am

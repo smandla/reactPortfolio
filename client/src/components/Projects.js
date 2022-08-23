@@ -5,20 +5,20 @@ import { Container } from "react-bootstrap";
 const Projects = () => {
   const projects = [
     {
-      projectName: "StockWatch",
-      img: "./images/stockwatch1.png",
+      projectName: "Wordle",
+      img: "./images/wordle.png",
       githubUrl: "www.google.com",
       deployedUrl: "www.google.com",
     },
     {
       projectName: "StockWatch",
-      img: "./images/stockwatch1.png",
+      img: "./images/stockwatch.png",
       githubUrl: "www.google.com",
       deployedUrl: "www.google.com",
     },
     {
-      projectName: "StockWatch",
-      img: "./images/stockwatch1.png",
+      projectName: "Rooting For You",
+      img: "./images/rootingforyou.png",
       githubUrl: "www.google.com",
       deployedUrl: "www.google.com",
     },

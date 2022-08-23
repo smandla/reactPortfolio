@@ -5,6 +5,8 @@ import Home from "./Home";
 import AboutMe from "./AboutMe";
 import Layout from "./Layout/Layout";
 import Projects from "./Projects";
+import ContactMe from "./ContactMe";
+import Footer from "./Footer";
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 const photoObj = [
@@ -136,6 +138,8 @@ const Animation = () => {
         <Home />
         <AboutMe />
         <Projects />
+        <ContactMe />
+        <Footer />
       </motion.section>
     </Layout>
   );

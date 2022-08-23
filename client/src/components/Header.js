@@ -6,7 +6,7 @@ import classes from "./Header.module.css";
 
 const Header = (props) => {
   return (
-    <div className={classes.header}>
+    <header className={classes.header}>
       <span className={classes.name}>kavya mandla</span>
       <ul>
         <li>
@@ -22,7 +22,7 @@ const Header = (props) => {
           <a href="/hireme">Hire Me</a>
         </li>
       </ul>
-    </div>
+    </header>
   );
 };
 
