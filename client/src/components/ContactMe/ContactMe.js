@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import "./ContactMe.css";
-import ContactMeForm from "./ContactMeForm";
+import ContactMeForm from "./ContactMeForm/ContactMeForm";
 const ContactMe = () => {
   return (
     <div>

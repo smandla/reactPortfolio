@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
-import "./ContactMe.css";
+import "../ContactMe.css";
 const ContactMeForm = () => {
   return (
     <Form className="contact_form">

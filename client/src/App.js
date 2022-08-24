@@ -3,8 +3,6 @@ import "./App.css";
 import { Routes, Route, useLocation, useHistory } from "react-router-dom";
 import Animation from "./components/Animation";
 import { motion, AnimatePresence } from "framer-motion";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
 
 function App() {
   // const location = useLocation();

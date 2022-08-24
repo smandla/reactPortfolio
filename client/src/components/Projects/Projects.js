@@ -1,7 +1,8 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCards/ProjectCard";
 import "./Projects.css";
-import { Container } from "react-bootstrap";
+import { Container, Row, Tab } from "react-bootstrap";
+import Slider from "react-slick";
 const Projects = () => {
   const projects = [
     {
@@ -29,14 +30,28 @@ const Projects = () => {
       deployedUrl: "www.google.com",
     },
   ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <Container>
+    <Container className="project_card">
       <h2 className="project_title">Projects</h2>
-      <section className="project_wrapper">
+      <Slider {...settings}>
+        {/* <section className="project_wrapper"> */}
+        {/* <div> */}
         {projects.map((project) => {
-          return <ProjectCard project={project} />;
+          return (
+            // <div>
+            <ProjectCard project={project} />
+            // </div>
+          );
         })}
-      </section>
+        {/* </section> */}
+      </Slider>
     </Container>
   );
 };

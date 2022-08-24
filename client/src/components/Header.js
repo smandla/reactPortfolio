@@ -1,26 +1,32 @@
 import React, { Fragment } from "react";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
+
 // import Home from "../Home/Home";
 // import AboutMe from "../AboutMe/AboutMe";
 import classes from "./Header.module.css";
 
 const Header = (props) => {
+  //   console.log(user);
+  //   console.log(leetcode);
   return (
     <header className={classes.header}>
       <span className={classes.name}>kavya mandla</span>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#">About Me</a>
         </li>
         <li>
-          <a href="#">About Me</a>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact Me</a>
         </li>
         <li>
           <a href="#">Resume</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/hireme">Hire Me</a>
-        </li>
+        </li> */}
       </ul>
     </header>
   );

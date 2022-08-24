@@ -2,10 +2,10 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PhotoAlbum from "react-photo-album";
 import Home from "./Home";
-import AboutMe from "./AboutMe";
+import AboutMe from "./AboutMe/AboutMe";
 import Layout from "./Layout/Layout";
-import Projects from "./Projects";
-import ContactMe from "./ContactMe";
+import Projects from "./Projects/Projects";
+import ContactMe from "./ContactMe/ContactMe";
 import Footer from "./Footer";
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
@@ -76,23 +76,6 @@ const Animation = () => {
     },
   };
 
-  const text = {
-    initial: {
-      y: 0,
-    },
-    animate: {
-      y: 200,
-      height: 0,
-      transition: {
-        duration: 1.5,
-        ease: [0.87, 0, 0.13, 1],
-      },
-    },
-    transition: {
-      opacity: { ease: "linear" },
-      layout: { duration: 0.3 },
-    },
-  };
   const InitialTransition = () => {
     return (
       <div>
@@ -121,9 +104,9 @@ const Animation = () => {
             onAnimationStart={() =>
               document.body.classList.add("overflow-hidden")
             }
-            // onAnimationComplete={() =>
-            //   document.body.classList.remove("overflow-hidden")
-            // }
+            onAnimationComplete={() =>
+              document.body.classList.remove("overflow-hidden")
+            }
           >
             <PhotoAlbum photos={photos} layout="masonry" />
           </motion.div>

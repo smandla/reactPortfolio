@@ -30,7 +30,7 @@
 .profile-details {
   text-align: left;
   padding: 50px;
-  width: 80%;
+  width: 60%;
   display: flex;
   /* width: 50%;x */
   flex-direction: column;
