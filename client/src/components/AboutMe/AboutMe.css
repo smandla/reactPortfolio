@@ -124,7 +124,7 @@
 .profile-picture-background {
   width: 92%;
   height: 100%;
-  background-image: url("../../public/images/kavya.jpg");
+  background-image: url("../../../public/images/kavya.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

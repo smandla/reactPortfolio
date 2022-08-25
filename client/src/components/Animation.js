@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PhotoAlbum from "react-photo-album";
-import Home from "./Home";
+// import Home from "./AboutMe";
 import AboutMe from "./AboutMe/AboutMe";
 import Layout from "./Layout/Layout";
 import Projects from "./Projects/Projects";
@@ -118,7 +118,6 @@ const Animation = () => {
     <Layout>
       <motion.section exit={{ opacity: 0 }}>
         <InitialTransition />
-        <Home />
         <AboutMe />
         <Projects />
         <ContactMe />
