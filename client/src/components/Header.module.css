@@ -42,10 +42,6 @@
   min-width: 80px;
   margin-right: 10px;
   justify-content: center;
-
-  /* text-decoration: none; */
-}
-.header a {
   display: block;
   padding: 8px;
   font-family: "Open Sans", sans-serif;
@@ -54,6 +50,13 @@
   font-weight: 400;
   text-decoration: none;
   color: white;
+  /* text-decoration: none; */
+}
+.header li:hover {
+  cursor: pointer;
+  color: #34cca6;
+}
+.header a {
 }
 .header a[href="/hireme"] {
   border: 1px solid #ccc;

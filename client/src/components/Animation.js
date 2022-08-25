@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PhotoAlbum from "react-photo-album";
 // import Home from "./AboutMe";
@@ -7,6 +7,7 @@ import Layout from "./Layout/Layout";
 import Projects from "./Projects/Projects";
 import ContactMe from "./ContactMe/ContactMe";
 import Footer from "./Footer";
+import Header from "./Header";
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 const photoObj = [
@@ -43,6 +44,9 @@ const photos = photoObj.map((photo) => ({
 }));
 console.log(photos);
 const Animation = () => {
+  const aboutme = useRef(null);
+  const portfolio = useRef(null);
+  const contactme = useRef(null);
   const blackBox = {
     initial: {
       width: "100%",
@@ -93,12 +97,8 @@ const Animation = () => {
         >
           <motion.div
             variants={textContainer}
-            className="absolute items-center flex"
             style={{
-              //   display: "flex",
               overflow: "scroll",
-              //   background: "red",
-              //   justifyContent: "center",
               alignItems: "center",
             }}
             onAnimationStart={() =>
@@ -114,11 +114,13 @@ const Animation = () => {
       </div>
     );
   };
+
   return (
     <Layout>
       <motion.section exit={{ opacity: 0 }}>
         <InitialTransition />
-        <AboutMe />
+        <Header aboutmeRef={aboutme} />
+        <AboutMe ref={aboutme} />
         <Projects />
         <ContactMe />
         <Footer />

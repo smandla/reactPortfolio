@@ -3,7 +3,7 @@ import "./App.css";
 import { Routes, Route, useLocation, useHistory } from "react-router-dom";
 import Animation from "./components/Animation";
 import { motion, AnimatePresence } from "framer-motion";
-
+// import AboutMe from "./components/AboutMe/AboutMe";
 function App() {
   // const location = useLocation();
 

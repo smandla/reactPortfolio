@@ -17,7 +17,6 @@ const Home = () => {
       style={{ background: "#151515", width: "100%", height: "100%" }}
     >
       <div>
-        <Header />
         <div className="profile-container" id="Profile">
           <div className="profile-parent">
             <div className="profile-picture">

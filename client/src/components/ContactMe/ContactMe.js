@@ -1,13 +1,13 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Container } from "react-bootstrap";
 import "./ContactMe.css";
 import ContactMeForm from "./ContactMeForm/ContactMeForm";
 const ContactMe = () => {
   return (
-    <div>
+    <Container className="container_contact">
       <h2 className="contact_title">Contact Me</h2>
       <ContactMeForm />
-    </div>
+    </Container>
   );
 };
 

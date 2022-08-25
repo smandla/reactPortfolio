@@ -1,19 +1,27 @@
-import React, { Fragment } from "react";
+import React, { useRef } from "react";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
-
 // import Home from "../Home/Home";
 // import AboutMe from "../AboutMe/AboutMe";
 import classes from "./Header.module.css";
 
 const Header = (props) => {
-  //   console.log(user);
-  //   console.log(leetcode);
+  const aboutme = useRef(null);
+  const portfolio = useRef(null);
+  const contactme = useRef(null);
+
+  const scrollToComp = (comp) => {
+    window.scrollTo({
+      top: comp.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     <header className={classes.header}>
       <span className={classes.name}>kavya mandla</span>
       <ul>
-        <li>
-          <a href="#">About Me</a>
+        <li onClick={() => scrollToComp(aboutme)}>
+          About Me
+          {/* <a href="/aboutme"></a> */}
         </li>
         <li>
           <a href="#">Portfolio</a>
