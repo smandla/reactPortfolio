@@ -34,7 +34,7 @@
   /* text-decoration: none; */
   align-items: center;
 }
-.header li {
+.header a {
   float: left;
   padding-top: 0;
   padding-bottom: 0;
@@ -52,7 +52,7 @@
   color: white;
   /* text-decoration: none; */
 }
-.header li:hover {
+.header a:hover {
   cursor: pointer;
   color: #34cca6;
 }

@@ -5,23 +5,23 @@ import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 
 const Header = (props) => {
-  const aboutme = useRef(null);
-  const portfolio = useRef(null);
-  const contactme = useRef(null);
+  // const aboutme = useRef(null);
+  // const portfolio = useRef(null);
+  // const contactme = useRef(null);
 
-  const scrollToComp = (comp) => {
-    window.scrollTo({
-      top: comp.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToComp = (comp) => {
+  //   window.scrollTo({
+  //     top: comp.current.offsetTop,
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
     <header className={classes.header}>
       <span className={classes.name}>kavya mandla</span>
       <ul>
-        <li onClick={() => scrollToComp(aboutme)}>
-          About Me
-          {/* <a href="/aboutme"></a> */}
+        <li>
+          {/* About Me */}
+          <a href="/aboutme">About Me</a>
         </li>
         <li>
           <a href="#">Portfolio</a>

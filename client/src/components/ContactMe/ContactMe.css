@@ -12,6 +12,7 @@
   /* align-items: center; */
 }
 .container_contact {
+  padding-top: 10px;
   width: 100%;
   margin: 0 auto;
   display: flex;
