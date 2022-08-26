@@ -3,11 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import Header from "../Header";
 import Typical from "react-typical";
+import ResumeDoc from "../../assets/kavyamandla_2022.pdf";
+
 import { FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { TbBrandGithub, TbBrandSoundcloud } from "react-icons/tb";
 import { RiSoundcloudFill } from "react-icons/ri";
 import { MdOutlineEmail } from "react-icons/md";
 import "./AboutMe.css";
+
 const Home = () => {
   console.log("in home");
   const name = `<KAVYA/>`;
@@ -53,26 +56,35 @@ const Home = () => {
                     <a href="www.linkedin.com/srikavya-mandla">
                       <FaLinkedinIn />
                     </a>
-                    <a href="www.linkedin.com/srikavya-mandla">
+                    <a href="https://github.com/smandla">
                       <TbBrandGithub />
                     </a>
-                    <a href="www.linkedin.com/srikavya-mandla">
+                    <a href="https://soundcloud.com/kavya-mandla">
                       <RiSoundcloudFill />
                     </a>
-                    <a href="www.linkedin.com/srikavya-mandla">
+                    <a href="tel:xxx-xxxx">
                       <FaPhoneAlt />
                     </a>
-                    <a href="www.linkedin.com/srikavya-mandla">
+                    <a href="mailto:kavyamandla04@gmail.com">
                       <MdOutlineEmail />
                     </a>
+                    <a href={ResumeDoc} download="Srikavya's_Resume">
+                      <button
+                        className="btn highlighted-btn"
+                        download
+                        style={{ color: "white" }}
+                      >
+                        Get Resume
+                      </button>
+                    </a>
                   </span>
-                  {/* <span className="profile-role-tagline">
+                  <span className="profile-role-tagline">
                     Junior Front End Engineer with experience in React,
                     HTML/CSS, JavaScript, Node.JS, MERN stack. Currently, I am
                     working on a Wordle Clone using the React framework. Outside
                     of programming, I love to hike, travel, produce music,
                     dance, and blog about new restaurants (@kavskravings).
-                  </span> */}
+                  </span>
                 </span>
               </div>
               <div className="profile-optins">
