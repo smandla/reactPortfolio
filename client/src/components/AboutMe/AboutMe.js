@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import Header from "../Header";
 import Typical from "react-typical";
 import ResumeDoc from "../../assets/kavyamandla_2022.pdf";
 
@@ -23,8 +22,6 @@ const Home = () => {
         <div className="profile-container" id="Profile">
           <div className="profile-parent">
             <div className="profile-picture">
-              {/* <div className="profile-details_nameTag">{name}</div> */}
-
               <div className="profile-picture-background"></div>
             </div>
             <div className="profile-details">
@@ -86,14 +83,6 @@ const Home = () => {
                     dance, and blog about new restaurants (@kavskravings).
                   </span>
                 </span>
-              </div>
-              <div className="profile-optins">
-                {/* <a href={ResumeDoc} download="ResumeDoc"> */}
-                {/* <button className="btn highlighted-btn">Get Resume</button>
-                </a> */}
-                {/* <a href="CV.hosein.pdf" download="hosein CV.hosein.pdf">
-                  <button className="btn highlighted-btn">Hire Me!</button>
-                </a> */}
               </div>
             </div>
           </div>

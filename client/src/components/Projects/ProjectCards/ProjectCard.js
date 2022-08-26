@@ -2,11 +2,14 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import "./ProjectCard.css";
 const ProjectCard = (props) => {
-  console.log(props.project);
   return (
     <Col className="card_center">
       <div className="card_image">
-        <img src={props.project.img} className="img" />
+        <img
+          src={props.project.img}
+          alt={props.project.projectName}
+          className="img"
+        />
         <div className="card_body">
           <h4>{props.project.projectName}</h4>
           <span>

@@ -1,19 +1,6 @@
-/* .project_card {
-  background: red;
-  margin: 10px;
-  height: 10%;
-  width: 45%;
-} */
-.project_img {
-  /* width: 100%; */
-  /* min-width: ; */
-}
 @media screen and (min-width: 990px) {
   .project_card {
-    /* background: red; */
     margin: 10px;
-    /* height: 30%; */
-    /* width: 30%; */
   }
 }
 @media screen and (max-width: 450px) {
@@ -29,21 +16,13 @@
   margin-bottom: 24px;
   width: 550px;
   height: 550px;
-  /* background: red; */
-  /* width: 100%;
-  height: 100%; */
 }
 .card_center {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  /* background: cadetblue; */
-  /* justify-content: center;
-  align-items: center;
-  width: 40%; */
 }
 .img {
-  /* object-fit: cover; */
   width: 80%;
   height: 80%;
   margin: 0 auto;
@@ -51,37 +30,20 @@
   justify-content: center;
   align-items: center;
 }
-.card_image::before {
-  /* content: ""; */
-  /* background: black; */
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center;
-  margin: 0 auto; */
-  /* opacity: 0.85; */
-  /* position: absolute; */
-  /* width: 100%; */
-  /* width: 400px; */
-  /* height: 100%; */
-  /* transition: 0.4s ease-in-out; */
-}
+
 .card_image:hover::before {
   height: 450px;
 }
 .card_body {
-  position: absolute;
   text-align: center;
   left: 60%;
-  color: #34cca6;
   transform: translate(-60%, -60%);
-  transition: 0.5s ease-in-out;
-
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 1s ease;
+  transition: 1s ease-in-out;
   opacity: 0;
   color: white;
   background-color: black;

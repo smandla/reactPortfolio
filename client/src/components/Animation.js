@@ -1,17 +1,21 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PhotoAlbum from "react-photo-album";
-// import Home from "./AboutMe";
 import AboutMe from "./AboutMe/AboutMe";
 import Layout from "./Layout/Layout";
 import Projects from "./Projects/Projects";
 import ContactMe from "./ContactMe/ContactMe";
 import Footer from "./Footer";
 import Header from "./Header";
+
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 const photoObj = [
-  { src: "./images/bigsur.jpg", width: 1080, height: 780 },
+  {
+    src: "/images/bigsur.jpg",
+    width: 1080,
+    height: 780,
+  },
   { src: "./images/grad.jpg", width: 1080, height: 1620 },
   { src: "./images/lily.jpg", width: 1080, height: 720 },
   { src: "./images/lotus.jpg", width: 1080, height: 720 },
@@ -44,9 +48,6 @@ const photos = photoObj.map((photo) => ({
 }));
 console.log(photos);
 const Animation = () => {
-  const aboutme = useRef(null);
-  const portfolio = useRef(null);
-  const contactme = useRef(null);
   const blackBox = {
     initial: {
       width: "100%",
@@ -56,26 +57,23 @@ const Animation = () => {
     animate: {
       height: 0,
       transition: {
-        // when: "afterChildren",
         duration: 5,
         ease: [0.87, 0, 0.13, 1],
       },
     },
   };
-  const textContainer = {
+
+  const container = {
     initial: {
       opacity: 1,
-      // bottom: 0,
       height: "100%",
     },
     animate: {
       height: 0,
-      // bottom: 0,
       opacity: 0,
       transition: {
         duration: 10,
         ease: [0.86, 0.3, 0.1, 1],
-        // when: "afterChildren",
       },
     },
   };
@@ -96,7 +94,7 @@ const Animation = () => {
           }
         >
           <motion.div
-            variants={textContainer}
+            variants={container}
             style={{
               overflow: "scroll",
               alignItems: "center",
@@ -119,8 +117,8 @@ const Animation = () => {
     <Layout>
       <motion.section exit={{ opacity: 0 }}>
         <InitialTransition />
-        <Header aboutmeRef={aboutme} />
-        <AboutMe ref={aboutme} />
+        <Header />
+        <AboutMe />
         <Projects />
         <ContactMe />
         <Footer />
