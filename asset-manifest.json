@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kavya_react_portfolio/static/css/main.1aab9457.css",
-    "main.js": "/kavya_react_portfolio/static/js/main.cfd14d55.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/kavya_react_portfolio/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/kavya.jpg": "/kavya_react_portfolio/static/media/kavya.8f783961d36cc1801d99.jpg",
-    "static/media/kavyamandla_2022.pdf": "/kavya_react_portfolio/static/media/kavyamandla_2022.27d09944736426b4a70f.pdf",
-    "static/media/logo.svg": "/kavya_react_portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/slick.svg": "/kavya_react_portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/kavya_react_portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/kavya_react_portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/kavya_react_portfolio/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/kavya_react_portfolio/index.html",
-    "main.1aab9457.css.map": "/kavya_react_portfolio/static/css/main.1aab9457.css.map",
-    "main.cfd14d55.js.map": "/kavya_react_portfolio/static/js/main.cfd14d55.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/kavya_react_portfolio/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "https://smandla.github.io/reactPortfolio/static/css/main.e2f9e732.css",
+    "main.js": "https://smandla.github.io/reactPortfolio/static/js/main.2e0a92fa.js",
+    "static/js/787.c4e7f8f9.chunk.js": "https://smandla.github.io/reactPortfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/kavya.jpg": "https://smandla.github.io/reactPortfolio/static/media/kavya.8f783961d36cc1801d99.jpg",
+    "static/media/kavyamandla_2022.pdf": "https://smandla.github.io/reactPortfolio/static/media/kavyamandla_2022.27d09944736426b4a70f.pdf",
+    "static/media/logo.svg": "https://smandla.github.io/reactPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/slick.svg": "https://smandla.github.io/reactPortfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "https://smandla.github.io/reactPortfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "https://smandla.github.io/reactPortfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "https://smandla.github.io/reactPortfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "https://smandla.github.io/reactPortfolio/index.html",
+    "main.e2f9e732.css.map": "https://smandla.github.io/reactPortfolio/static/css/main.e2f9e732.css.map",
+    "main.2e0a92fa.js.map": "https://smandla.github.io/reactPortfolio/static/js/main.2e0a92fa.js.map",
+    "787.c4e7f8f9.chunk.js.map": "https://smandla.github.io/reactPortfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1aab9457.css",
-    "static/js/main.cfd14d55.js"
+    "static/css/main.e2f9e732.css",
+    "static/js/main.2e0a92fa.js"
   ]
 }
