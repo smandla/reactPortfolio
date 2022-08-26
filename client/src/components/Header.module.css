@@ -50,14 +50,12 @@
   font-weight: 400;
   text-decoration: none;
   color: white;
-  /* text-decoration: none; */
 }
 .header a:hover {
   cursor: pointer;
   color: #34cca6;
 }
-.header a {
-}
+
 .header a[href="/hireme"] {
   border: 1px solid #ccc;
   border-radius: 10px;
