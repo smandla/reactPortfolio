@@ -50,7 +50,7 @@ const Home = () => {
                     />
                   </h1>
                   <span className="social_media">
-                    <a href="www.linkedin.com/srikavya-mandla">
+                    <a href="http://linkedin.com/srikavya-mandla">
                       <FaLinkedinIn />
                     </a>
                     <a href="https://github.com/smandla">
