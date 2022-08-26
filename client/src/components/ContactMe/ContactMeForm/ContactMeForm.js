@@ -1,67 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form, Button } from "react-bootstrap";
 import "../ContactMe.css";
 const ContactMeForm = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const handleInputChange = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-    // console.log()
-    if (inputType === "name") {
-      setName(inputValue);
-    } else if (inputType === "email") {
-      setEmail(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
-  };
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
   return (
     <Form className="contact_form">
-      <Form.Group className="mb-3" controlId="formBasicName">
-        <Form.Control
-          type="name"
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          placeholder="Enter name"
-        />
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted">
+          We'll never share your email with anyone else.
+        </Form.Text>
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control
-          type="email"
-          name="email"
-          value={email}
-          onChange={handleInputChange}
-          placeholder="Enter email"
-        />
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicMessage">
-        <Form.Control
-          type="message"
-          name="message"
-          value={message}
-          onChange={handleInputChange}
-          placeholder="Enter message"
-        />
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button
-        type="submit"
-        style={{ backgroundColor: "#34cca6", border: "none" }}
-        className="submit_btn"
-        onClick={handleFormSubmit}
-      >
+      <Button variant="primary" type="submit">
         Submit
       </Button>
     </Form>
