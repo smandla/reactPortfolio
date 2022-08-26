@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://smandla.github.io/reactPortfolio/static/css/main.e2f9e732.css",
-    "main.js": "https://smandla.github.io/reactPortfolio/static/js/main.2e0a92fa.js",
+    "main.css": "https://smandla.github.io/reactPortfolio/static/css/main.c3b8aea4.css",
+    "main.js": "https://smandla.github.io/reactPortfolio/static/js/main.a8e04c2c.js",
     "static/js/787.c4e7f8f9.chunk.js": "https://smandla.github.io/reactPortfolio/static/js/787.c4e7f8f9.chunk.js",
     "static/media/kavya.jpg": "https://smandla.github.io/reactPortfolio/static/media/kavya.8f783961d36cc1801d99.jpg",
     "static/media/kavyamandla_2022.pdf": "https://smandla.github.io/reactPortfolio/static/media/kavyamandla_2022.27d09944736426b4a70f.pdf",
@@ -11,12 +11,12 @@
     "static/media/slick.ttf": "https://smandla.github.io/reactPortfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "https://smandla.github.io/reactPortfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://smandla.github.io/reactPortfolio/index.html",
-    "main.e2f9e732.css.map": "https://smandla.github.io/reactPortfolio/static/css/main.e2f9e732.css.map",
-    "main.2e0a92fa.js.map": "https://smandla.github.io/reactPortfolio/static/js/main.2e0a92fa.js.map",
+    "main.c3b8aea4.css.map": "https://smandla.github.io/reactPortfolio/static/css/main.c3b8aea4.css.map",
+    "main.a8e04c2c.js.map": "https://smandla.github.io/reactPortfolio/static/js/main.a8e04c2c.js.map",
     "787.c4e7f8f9.chunk.js.map": "https://smandla.github.io/reactPortfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2f9e732.css",
-    "static/js/main.2e0a92fa.js"
+    "static/css/main.c3b8aea4.css",
+    "static/js/main.a8e04c2c.js"
   ]
 }
